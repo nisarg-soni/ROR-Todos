@@ -1,6 +1,7 @@
 class TodosController < ApplicationController
     def index
         @todos = Todo.order(due: :asc,due: :asc)
+        @todo = Todo.new
     end
 
     def show
@@ -16,12 +17,12 @@ class TodosController < ApplicationController
     end
 
     def create
-        @todo = Todo.new(todo_params)
+        @newtodo = Todo.new(todo_params)
 
-        if @todo.save
+        if @newtodo.save
             redirect_to root_url, notice: 'Creation Successfull'
           else
-            render :new    
+            redirect_to root_url, notice: 'Creation Unsuccessfull'    
           end
     end
 
