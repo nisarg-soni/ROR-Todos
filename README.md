@@ -1,24 +1,22 @@
-# README
+# ROR-Todos
+A simple app to manage your To-Do list.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Technologies used :
 
-Things you may want to cover:
+  - Ruby
+  - Rails
+  - Mysql
+  
+# Installation :
+    - Create a empty Mysql database named 'rortodos'.
+    - Clone the repo and cd into the project folder.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ bundle install
+$ rails db:migrate
+$ rails s
+```
+    - Go to http://localhost:3000/ to check out the app. 
+## Versions :
+* **Ruby** : 2.4.1
+* **Rails** : 5.1
