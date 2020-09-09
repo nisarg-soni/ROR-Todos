@@ -1,25 +1,27 @@
 <%= form_with(model: todo, local: true) do |form| %>  
+    <div class="pad">
     <div class="field">
-      <%= form.label :content %>
-      <%= form.text_area :content, id: :todo_content %>
-    </div>
-  
-    <div class="field">
-      <%= form.label :status %>
-      <%= form.check_box :status, id: :todo_status %>
-    </div>
-  
-    <div class="field">
-      <%= form.label :due %>
-      <%= form.date_select :due, id: :todo_due %>
-    </div>
-  
-    <div class="field">
-      <%= form.label :priority %>
-      <%= form.number_field :priority, id: :todo_priority %>
-    </div>
-  
-    <div class="actions">
-      <%= form.submit %>
+    <%= form.label :content %>
+    <%= form.text_area :content, id: :todo_content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.check_box :status, id: :todo_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :due %>
+    <%= form.date_select :due, id: :todo_due %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.number_field :priority, id: :todo_priority %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
     </div>
   <% end %>
